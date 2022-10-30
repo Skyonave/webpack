@@ -1,0 +1,56 @@
+.button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: $color-button;
+  border-radius: 50%;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: $color-button-opacity;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  &:hover::after {
+    background: $color-button;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+}
+
+.button__menu {
+  &::after {
+    background-image: url("/src/img/icons/burger-menu.svg");
+  }
+  &:hover::after {
+    mask-image: url("/src/img/icons/burger-menu.svg");
+  }
+}
+
+.button__repair {
+  &::after {
+    background-image: url("/src/img/icons/repair.svg");
+  }
+  &:hover::after {
+    mask-image: url("/src/img/icons/repair.svg");
+  }
+}
+
+.button__checkstatus {
+  &::after {
+    background-image: url("/src/img/icons/checkstatus.svg");
+  }
+  &:hover::after {
+    mask-image: url("/src/img/icons/checkstatus.svg");
+  }
+}

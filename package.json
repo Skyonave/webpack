@@ -1,7 +1,7 @@
 {
   "name": "webcore-1.6",
   "version": "1.0.0",
-  "description": "kataAcademy",
+  "description": "",
   "private": true,
   "scripts": {
     "start": "set NODE_ENV=development&&webpack serve --open",

@@ -1,0 +1,18 @@
+.header {
+    height: 88px;
+    background-color: $color-white;
+    width: 100%;
+
+    .header__menu-wrapper {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .header__divider {
+            width: 2px;
+            height: 32px;
+            background-color: $color-divider;
+            border-radius: 1px;
+        }
+    }
+}
